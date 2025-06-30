@@ -1,22 +1,13 @@
-import { useState } from "react";
+import React from 'react'
+import Chai from './Chai'
 
-function App() {
-  const [count, setCount] = useState(0);
+const userName = "hello Aayush"
 
+export default function App() {
   return (
     <>
-      <h1>Count : {count}</h1>
-      <button
-        onClick={() => {
-          setCount((count) => count + 1);
-        }}
-      >
-        count
-      </button>
-
-    
+    <h1>{userName}</h1>
+    <Chai /> 
     </>
-  );
+  )
 }
-
-export default App;
